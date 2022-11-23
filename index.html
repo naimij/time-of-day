@@ -82,19 +82,26 @@
 	let myDate = new Date();
 	let myHour = myDate.getHours();
 	let myGreeting = "";
+	let myColor = "";
+
 
 	if(myHour > 12){
 		//alert("Good Afternoon");
 		myGreeting = "Good Afternoon!";
+		myColor = "green";
 	}else{
 		//alert("NOT Afternoon!");
 		myGreeting = "NOT Afternoon!";
+		myColor = "white";
 	}
 
 //console.log(myGreeting)
 
  //Here we are placing the greeting on the page
  document.getElementById("my-greeting").innerHTML = myGreeting;
+
+ //Here we are changing the background color of the html tag
+document.querySelector("html").style.backgroundColor = myColor;
  
  
  
